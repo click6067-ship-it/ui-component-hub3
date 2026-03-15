@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, Search, Github } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import { ThemeToggle } from '../ThemeToggle';
 import { SearchModal } from '../search/SearchModal';
 
@@ -53,7 +53,7 @@ export function Header({ onMenuClick }: HeaderProps) {
             </button>
           </div>
 
-          {/* Right: Theme Toggle and GitHub */}
+          {/* Right: Theme Toggle and Portfolio Home */}
           <div className="flex items-center gap-3">
             <button
               onClick={() => setSearchOpen(true)}
@@ -63,13 +63,18 @@ export function Header({ onMenuClick }: HeaderProps) {
               <Search className="w-5 h-5 text-text-secondary" />
             </button>
             <a
-              href="https://github.com"
+              href="https://yongha-kim-frontier.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center hover:bg-bg-hover rounded-lg transition-colors"
-              aria-label="GitHub"
+              className="group relative w-10 h-10 flex items-center justify-center rounded-xl transition-all duration-300 ease-out hover:scale-110 hover:shadow-[0_0_20px_rgba(59,158,255,0.3)] backdrop-blur-sm bg-white/5 border border-white/10 hover:border-brand-primary/40 hover:bg-white/10"
+              aria-label="Portfolio Home"
+              title="Visit Portfolio"
             >
-              <Github className="w-5 h-5 text-text-secondary" />
+              <img
+                src="/Yo-logo.png"
+                alt="Home"
+                className="w-6 h-6 object-contain transition-all duration-300 ease-out group-hover:brightness-110 group-hover:drop-shadow-[0_0_6px_rgba(59,158,255,0.5)]"
+              />
             </a>
             <ThemeToggle />
           </div>
