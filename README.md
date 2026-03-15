@@ -1,5 +1,8 @@
 # ComponentHub
 
+
+https://ui-component-hub3.vercel.app/
+
 현대적인 UI 컴포넌트 라이브러리 문서 사이트입니다.
 
 ## 🎨 주요 기능
@@ -11,33 +14,7 @@
 - 🎯 **라이브 미리보기** - 실시간 컴포넌트 확인
 - 📋 **코드 복사** - 원클릭 코드 복사 기능
 
-## 🚀 시작하기
 
-### 설치
-
-```bash
-npm install
-```
-
-### 개발 서버 실행
-
-```bash
-npm run dev
-```
-
-브라우저에서 `http://localhost:5173`을 열어 확인하세요.
-
-### 빌드
-
-```bash
-npm run build
-```
-
-### 프리뷰
-
-```bash
-npm run preview
-```
 
 ## 📁 프로젝트 구조
 
